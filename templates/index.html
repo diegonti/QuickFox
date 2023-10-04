@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Fox</title>
+
+    <link rel="icon" href="../static/img/favicon.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+
+</head>
+<body>
+    <h1>Quick Fox</h1>
+
+  <div class="container">
+    <form class="selection" method="POST" action="/select_boxes">
+      <div class="row">
+
+        <div class="col-4 text-center">
+          <label for="box_BEBER">
+            <input type="checkbox" id="box_BEBER" name="box" value="BEBER" {% if "BEBER" in selected_boxes %}checked{% endif %}> <span>Beber</span>
+          </label>
+        </div>
+        <div class="col-4 text-center">
+          <label for="box_RETOS">
+              <input type="checkbox" id="box_RETOS" name="box" value="RETOS" {% if "RETOS" in selected_boxes %}checked{% endif %}> <span>Retos</span>
+          </label>
+        </div>
+        <div class="col-4 text-center">
+          <label for="box_PDM">
+              <input type="checkbox" id="box_PDM" name="box" value="PDM" {% if "PDM" in selected_boxes %}checked{% endif %}> <span>PdM</span>
+          </label>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-4 text-center">
+            <label for="box_VOTAR">
+              <input type="checkbox" id="box_VOTAR" name="box" value="VOTAR" {% if "VOTAR" in selected_boxes %}checked{% endif %}> <span>Votar</span>
+            </label>
+          </div>
+
+            <div class="col-4 text-center">
+            <label for="box_TRIVIA">
+              <input type="checkbox" id="box_TRIVIA" name="box" value="TRIVIA" {% if "TRIVIA" in selected_boxes %}checked{% endif %}> <span>Trivia</span>
+            </label>
+          </div>
+
+            <div class="col-4 text-center">
+            <label for="box_INVITADOS">
+              <input type="checkbox" id="box_INVITADOS" name="box" value="INVITADOS" {% if "INVITADOS" in selected_boxes %}checked{% endif %}> <span>Invitados</span>
+            </label>
+          </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center">
+          <input type="submit" value="Save" class="submit-selection btn">
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <br> <br>
+
+  <div class="question-container">
+    <div>
+      <div class="question-background">
+        <p class="question-label">
+          {% if question_type %}
+              {{ question_type }}
+          {% endif %}
+        </p>
+  
+        <div class="question-placer">
+          {% if question_text %}
+              {{ question_text }}
+          {% endif %}
+        </div>
+        
+      </div>  
+      <div class="row">
+        <div class="col-6 text-center">
+          <!-- choose one of the two -->
+          <!-- <input type="submit" value="Add" class="submit-options btn"> -->
+          <a href="{{ url_for('add') }}" class="submit-options btn">Add</a>
+        </div>
+  
+        <div class="col-6 text-center">
+          <form method="POST" action="/next_question">
+            <input type="submit" value="Next" name="button" class="submit-options btn">
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>  
+
+
+  <br><br>
+
+
+  <div class="add-container" style="display: none;">
+    <form method="POST" action="/add_question">
+      <div class="add-background">
+        <p>Añadir una pregunta</p>
+
+        <select class="add-select" name="dropdown_new" id="dropdown_new">
+          <option value="" selected disabled>Selecciona la categoría</option>
+          <option value="BEBER">BEBER</option>
+          <option value="PDM">PDM</option>
+          <option value="RETOS">RETOS</option>
+          <option value="VOTAR">VOTAR</option>
+          <option value="TRIVIA">TRIVIA</option>
+          <option value="INVITADOS">INVITADOS</option>
+        </select>
+
+        <input class="add-write" type="text" id="NEW_QUESTION_TEXT" name="NEW_QUESTION_TEXT" value="Escribe aquí tu pregunta"><br><br>
+
+      </div>
+
+      <div class="row">
+        <div class="col-6 text-center">
+          <!-- choose one of the two -->
+          <input type="submit" value="Back" class="submit-options btn">
+          <!-- <a href="index.html" class="submit-options btn">Add</a> -->
+        </div>
+        
+        <div class="col-6 text-center">
+          <input type="submit" value="Add" class="submit-options btn">
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
+
+
