@@ -81,10 +81,20 @@ h1 {
     padding: 10px;
     height: 150px; /* Adjust the height of the inner rectangle */
     border-radius: 6px;
-    text-align: center;
-    align-items: center;
     display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+}
+
+.text-placer {
+    margin: 0px;
+}
+
+.answer-placer {
+    color: grey;
+    margin: 0px;
 }
 
 
@@ -149,5 +159,6 @@ h1 {
     border-radius: 6px;
     width: 95%;
     text-align: center;
+    word-wrap: break-word;
 
 }
