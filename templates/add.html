@@ -30,14 +30,20 @@
           <option value="INVITADOS">INVITADOS</option>
         </select>
 
-        <input class="add-write" type="text" id="NEW_QUESTION_TEXT" name="NEW_QUESTION_TEXT" value="Escribe aquí tu pregunta"><br><br>
-
+        <!-- <input class="add-write" type="text" id="NEW_QUESTION_TEXT" name="NEW_QUESTION_TEXT" placeholder="Escribe aquí tu pregunta" maxlength="250"> -->
+        <textarea class="add-write" type="text" id="NEW_QUESTION_TEXT" name="NEW_QUESTION_TEXT" placeholder="Escribe aquí tu pregunta" maxlength="250"></textarea>
       </div>
+
+      {% if error_message %}
+      <div class="alert alert-danger" style="text-align: center;">
+          {{ error_message }} <br>
+          Contact diegonti.doc@gmail.com for help
+      </div>
+      {% endif %}
 
       <div class="row">
         <div class="col-6 text-center">
           <!-- choose one of the two -->
-          <!-- <input type="submit" value="Back" class="submit-options btn"> -->
           <a href="{{ url_for('index') }}" class="submit-options btn">Back</a>
         </div>
         
