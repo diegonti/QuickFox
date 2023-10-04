@@ -1,0 +1,153 @@
+body {
+background-color: black;
+color: lightgray;
+}
+
+h1 {
+    text-align: center;
+    font-family: Consolas;
+    margin: 10px;
+}
+
+/* Style the checkbox to be hidden inside a form with class "selection" */
+.selection span {
+    display: inline-block;
+    width: 100px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    background-color: transparent; /* Default background color */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.submit-selection {
+    display: inline-block;
+    color: lightgray;
+    background-color: transparent; /* Default background color */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin: 2px;
+    width:95%; /* Adjust this for button size, or class="btn btn-block" */
+}
+
+.selection input[type="checkbox"] {
+    display: none;
+}
+
+/* Change the background color when the checkbox is checked inside a form with class "selection" */
+.selection input[type="checkbox"]:checked + span {
+    background-color: grey !important; /* Change the background color when checked */
+    color: black !important; /* Change text color when checked */
+}
+
+
+.submit-selection:hover {
+    background-color: grey !important; /* Change the background color when checked */
+    color: black !important; /* Change text color when checked */
+}
+
+
+
+/* QUESTION CARDS */
+.question-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.question-background {
+    background-color: grey; /* Default background color */
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-bottom: 2px;
+    margin-bottom: 5%;
+    width: 350px;
+}
+
+.question-label {
+    color: black;
+    margin-bottom: 20px;
+    height: 15px;
+}
+
+.question-placer {
+    background-color: lightgray;
+    color: black;
+    margin: 8px;
+    padding: 10px;
+    height: 150px; /* Adjust the height of the inner rectangle */
+    border-radius: 6px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.submit-options {
+    color: lightgray;
+    background-color: transparent; /* Default background color */
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin: 2px;
+    width: 75%;
+}
+
+
+.submit-options:hover {
+    background-color: grey !important; /* Change the background color when checked */
+    color: black !important; /* Change text color when checked */
+}
+
+
+.button-container {
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+}
+
+/* ADD SECTION */
+.add-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.add-background {
+    background-color: grey; /* Default background color */
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    padding-bottom: 2px;
+    margin: 5%;
+
+}
+
+.add-select {
+    background-color: lightgray;
+    color: grey;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 6px;
+    width: 95%;
+    text-align: center;
+}
+
+.add-write {
+    background-color: lightgray;
+    color: grey;
+    margin: 8px;
+    padding: 10px;
+    height: 150px; /* Adjust the height of the inner rectangle */
+    border-radius: 6px;
+    width: 95%;
+    text-align: center;
+
+}
