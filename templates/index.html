@@ -78,9 +78,18 @@
         </p>
   
         <div class="question-placer">
+          <p class="text-placer">
           {% if question_text %}
               {{ question_text }}
           {% endif %}
+          </p>
+
+          <p class="answer-placer">
+            {% if answer_text %}
+              {{ answer_text }}
+            {% endif %}
+          </p>
+
         </div>
         
       </div>  
