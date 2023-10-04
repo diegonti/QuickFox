@@ -1,0 +1,44 @@
+¿En que año Colón descubrio América? /R:1492
+Nombra tres artistas del impresionismo. /R:Monet, Renoir, Pissarro
+¿Cuántas cuerdas tiene una tiorba? /R:14
+¿Quién fue el primer presidente de la democracia española tras el franquismo? /R:Adolfo Suárez
+¿La invasión de qué fortaleza por parte de los revolucionarios es considerada como el punto de inicio de la Revolución Francesa? /R:Bastilla
+¿Cuál es el ave de mayor envergadura que sigue viva actualmente? /R:Albatros
+¿En qué año el hombre pisó la Luna por primera vez? /R:1969
+¿De dónde y cuándo son los primeros registros del uso de la marihuana? /R:China
+¿Quién fue el primer presidente de Estados Unidos? /R:George Washington
+¿Cómo se conoce la línea dibujada por las estrellas Alnitak, Alnilam y Mintaka vistas desde la Tierra? /R:Cinturón de Orión
+¿Cuánto duró la Guerra de los Cien Años? /R:116
+¿Cómo se llama la planta a partir de la cual suele ser elaborado el tequila? /R:Agave azul 
+¿Cómo se apellidaban los dos exploradores que dieron la primera vuelta al mundo? /R:Fernando de Magallanes y Juan Sebastián Elcano
+¿Qué nombre tenía el caballo de Don Quijote de la Mancha? /R:Rocinante
+¿Cuáles son las bases nitrogenadas del ADN? /R:Adenina, Timina, Guanina, Citosina
+¿Cuál es el idioma más hablado en Suiza? /R:Alemán.
+¿Qué pintor hizo el cuadro llamado “La joven de la perla”? /R:Johannes Vermeer
+¿Cuál es la velocidad de la luz? /R:299.792.458 m/s (~3e8 m/s)
+¿Cuál es el nombre técnico del miedo o fobia a las alturas? /R:Acrofobia
+¿Cuál es la tercera ley de Newton? /R:Ley de acción y reacción
+Analiza: Pedro le prestó dos libros de aventuras a su amigo Iván. /R:Suerte
+Analiza: Juan estaba muy enfadado. /R:Suerte
+Analiza: Hace mucho frío. /R:Suerte
+¿En qué país transcurre la acción de la película "Chappie"? /R:Sufádrica
+¿De quién es la película “Metrópolis”?  /R:Fritz Lang
+¿Cuál es la última película que dirigió Sergio Leone? /R:Érase una vez en América
+¿Quién dirigió 'El club de los poetas muertos'? /R:Peter Weir
+¿Cómo se llama el vecino de 'Toy Story'? /R:Sid Phillips
+¿Cómo se llamaban los ladrones de 'Solo en casa'? /R:Harry y Marv
+¿Qué se usó originalmente en la escena de la ducha de 'Psicosis' para simular la sangre de Janet Leigh? /R:Chocolate
+¿Cómo se llama el hermano de Remy de Ratatouille? /R:Émile
+Di los nombres y colores de las tortugas ninja. /R:Leonardo (azul), Miguel Ángel (naranja), Donatello (morado), Rafael (rojo)
+Canta la canción de los Teletubbies. /R:Suerte
+¿Qué función tiene el obturador? /R:Controlar el tiempo que el sensor esta expuesto a la luz
+¿Qué significa la F en fotografía? /R:Apertura del diafragma
+¿Cuál es la dirección exacta de la torre Agbar (calle y número)? /R:Av. Diagonal, 211
+¿A que distrito pertenece el código postal 08018? /R:Sant Martí
+¿Cuál es el número del del 1 al 10 de tu distrito de Barcelona? /R:NB:8, SA:9
+¿Cuántos barrios tiene Barcelona? /R:73 barrios (10 distritos)
+¿Cuándo fue la exposición internacional de Barcelona? /R:1929
+¿Si tuvieras que ir des de Fabra i Puig hasta Can Tries Gornal, que combinación de TMB usarías? /R:L1 (+L9S/L10S)
+¿Cuál es el estanco más próximo a donde estamos? Si no eres fumador, bebes X2 porque como no te jodes fumando, jódete bebiendo. /R:Suerte
+Nombra los últimos tres alcaldes. /R:Colau,Tries,Hereu
+Di el precio de todas las tarifas de metro que puedas usar (sin contar jubilados y niños y eso). /R:https://www.tmb.cat/es/tarifas-metro-bus-barcelona
