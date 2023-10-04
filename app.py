@@ -96,8 +96,8 @@ def add_question():
     error_storage_full = None
 
     # check folder size 
-    app_size = sum(f.stat().st_size for f in THIS_FOLDER.glob('**/*') if f.is_file())/1e9
-    if app_size > 4.0:
+    app_size = sum(f.stat().st_size for f in THIS_FOLDER.glob('**/*') if f.is_file())/1e6
+    if app_size > 400.0:
         error_storage_full = "STORAGE FULL! You cannot add more questions :("
         print("STORAGE FULL! You cannot add more questions :(")
         return render_template("add.html",error_message=error_storage_full)
