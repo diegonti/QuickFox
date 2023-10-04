@@ -70,11 +70,19 @@ def next_question():
     random.shuffle(questions)
     question_type, text_to_display = random.choice(questions)
 
+    if question_type == "TRIVIA":
+        text_to_display, answer_to_display = text_to_display.split("/R:")
+        answer_to_display = f"R: {answer_to_display}"
+        print(answer_to_display)
+    else:
+        answer_to_display = None
+
     # Display type/text
     return render_template('index.html', 
                            question_type=question_type,
                            question_text=text_to_display,
-                           selected_boxes=game_types)
+                           selected_boxes=game_types,
+                           answer_text=answer_to_display)
 
 
 @app.route('/add_question', methods=['POST'])
@@ -85,11 +93,20 @@ def add_question():
     question_type = new_question["dropdown_new"] # esto deberia ser seleccionable
     question_text = new_question["NEW_QUESTION_TEXT"]
 
-    new_path = THIS_FOLDER / f"data/{question_type}.txt"
-    with open(new_path,"a",encoding="utf-8") as outFile:
-        outFile.write(question_text + "\n")
+    error_storage_full = None
 
-    return render_template("index.html")
+    # check folder size 
+    app_size = sum(f.stat().st_size for f in THIS_FOLDER.glob('**/*') if f.is_file())/1e9
+    if app_size > 4.0:
+        error_storage_full = "STORAGE FULL! You cannot add more questions :("
+        print("STORAGE FULL! You cannot add more questions :(")
+        return render_template("add.html",error_message=error_storage_full)
+    else:
+        new_path = THIS_FOLDER / f"data/{question_type}.txt"
+        with open(new_path,"a",encoding="utf-8") as outFile:
+            outFile.write(question_text + "\n")
+
+        return render_template("index.html")
 
 
 
