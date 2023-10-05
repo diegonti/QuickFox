@@ -73,7 +73,6 @@ def next_question():
     if question_type == "TRIVIA":
         text_to_display, answer_to_display = text_to_display.split("/R:")
         answer_to_display = f"R: {answer_to_display}"
-        print(answer_to_display)
     else:
         answer_to_display = None
 
